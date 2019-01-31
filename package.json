@@ -1,0 +1,22 @@
+{
+  "name": "nodejsexpressapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoJG20/nodejsexpressapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranciscoJG20/nodejsexpressapp/issues"
+  },
+  "homepage": "https://github.com/FranciscoJG20/nodejsexpressapp#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
