@@ -17,7 +17,7 @@ app.set("view engine", "ejs");
 // });
 
 app.get("/profile/:name", (req, res) => {
-  res.render("profile");
+  res.render("profile", { person: req.params.name });
 });
 
 app.get("/customer/:id", (req, res) => {
