@@ -6,6 +6,12 @@
   </head>
   <body>
     <h1>This is the view of <%= person %></h1>
-    <p>This is a paragraph.</p>
+    <p><strong>Age: </strong><%= data.age %></p>
+    <h2>Hobbies</h2>
+    <ul>
+      <% data.hobbies.forEach(function(item){ %>
+      <li><%= item %></li>
+      <% }) %>
+    </ul>
   </body>
 </html>
