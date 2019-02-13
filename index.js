@@ -8,6 +8,7 @@ const ejs = require("ejs");
 // });
 
 app.set("view engine", "ejs");
+app.use(express.static("public"));
 
 // used to deliver an html file to the server! An alternative is to use the sendFile() method
 app.use(express.static(__dirname + "/public"));
