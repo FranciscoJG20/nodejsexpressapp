@@ -2,16 +2,16 @@ const express = require("express");
 const app = express();
 const ejs = require("ejs");
 
-// app.get("/", (req, res) => {
-//   res.send("Hello World!");
-//   res.end();
-// });
+app.get("/", (req, res) => {
+  res.render("index", { qs: req.query });
+});
 
 app.set("view engine", "ejs");
-app.use(express.static("public"));
+// to serve up a static file to the user e.g stylesheet using middleware
+app.use("/assets", express.static("assets"));
 
 // used to deliver an html file to the server! An alternative is to use the sendFile() method
-app.use(express.static(__dirname + "/public"));
+// app.use(express.static(__dirname + "/public"));
 // OR
 // app.get("/", (req, res) => {
 //   res.sendFile(__dirname + "/public/index.html");
