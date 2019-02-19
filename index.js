@@ -1,9 +1,16 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
 const ejs = require("ejs");
 
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
+
 app.get("/", (req, res) => {
   res.render("index", { qs: req.query });
+});
+
+app.post("/", urlencodedParser, (req, res) => {
+  res.render("form-success", { data: req.body });
 });
 
 app.set("view engine", "ejs");

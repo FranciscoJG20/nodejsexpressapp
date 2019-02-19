@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
-    <title>Page Title</title>
+    <title>The Best Site Ever</title>
   </head>
   <body>
     <h1>This is a Heading</h1>
     <p>This is a paragraph.</p>
     <p><%= qs.dept %></p>
+
+    <form id="contact-form" method="POST" action="/">
+      <label for="who">Full Name:</label>
+      <input type="text" name="who" />
+      <br />
+      <label for="email">Email Address:</label>
+      <input type="text" name="email" />
+      <br />
+      <input type="submit" value="submit" />
+    </form>
   </body>
 </html>
